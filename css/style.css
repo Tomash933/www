@@ -1,0 +1,908 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.wrapper{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* header */
+
+header {
+    position: relative;
+    background-color: #29a6dc;
+    height: 100vh;
+    font-family: 'Saira Condensed', Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+header>* {
+    position: absolute;
+}
+
+header img {
+    /* position: absolute; */
+    bottom: 0;
+    right: 0;
+    height: 50%;
+}
+
+div.welcome {
+    /* position: absolute; */
+    top: 40px;
+    width: 90%;
+    text-align: center;
+    color: white;
+    left: 5%;
+    right: 5%;
+}
+
+div.welcome p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+div.welcome h1 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+div.welcome h2 {
+    line-height: 0.8;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+div.welcome button {
+    margin-top: 30px;
+    line-height: 32px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Saira Condensed', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding: 0 10px;
+}
+
+div button:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+@media(orientation:portrait) and (min-width:280px) {
+    header img {
+        right: -90px;
+
+
+
+    }
+}
+
+@media(orientation:portrait) and (min-width:320px) {
+    header img {
+        right: 0px;
+
+    }
+}
+
+@media(orientation:portrait) and (min-width:360px) {
+
+    div.welcome p {
+        font-size: 50px;
+
+    }
+
+    div.welcome h1 {
+        margin-top: 10px;
+        font-size: 30px;
+        font-weight: bold;
+
+    }
+
+    div.welcome h2 {
+        line-height: 0.8;
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+
+
+    div button {
+        /* line-height: 35px; */
+        margin-top: 40px;
+        font-size: 26px;
+
+    }
+
+
+}
+
+@media(orientation:portrait) and (min-width:375px) {
+    header img {
+        right: -50px;
+
+    }
+}
+
+@media(orientation:portrait) and (min-width:768px) {
+
+    div.welcome {
+        top: 180px;
+        text-align: left;
+    }
+
+    div.welcome p {
+        font-size: 60px;
+
+    }
+
+    div.welcome h1 {
+        margin-top: 10px;
+        font-size: 40px;
+        font-weight: bold;
+
+    }
+
+    div.welcome h2 {
+        line-height: 0.8;
+        font-size: 40px;
+        font-weight: normal;
+    }
+
+
+
+    div button {
+        /* line-height: 35px; */
+        margin-top: 50px;
+        font-size: 32px;
+        line-height: 40px;
+
+    }
+}
+
+
+@media(orientation:landscape) and (min-width:533px) {
+    header img {
+        /* position: absolute; */
+
+        height: 50%;
+    }
+
+    div.welcome {
+        width: 50%;
+        text-align: center;
+        color: white;
+    }
+
+    div button {
+        margin-top: 50px;
+    }
+
+
+}
+
+@media(orientation:landscape) and (min-width:640px) {
+    div.welcome {
+        text-align: left;
+        top: 30px;
+    }
+
+    div.welcome p {
+        font-size: 60px;
+
+    }
+
+    div.welcome h1 {
+        margin-top: 10px;
+        font-size: 40px;
+        font-weight: bold;
+
+    }
+
+    div.welcome h2 {
+        line-height: 0.8;
+        font-size: 40px;
+        font-weight: normal;
+    }
+
+
+
+    div button {
+        /* line-height: 35px; */
+        margin-top: 40px;
+        font-size: 26px;
+
+    }
+
+
+
+
+
+}
+
+@media(orientation:landscape) and (min-width:1024px) {
+
+    header img {
+        height: 70%;
+    }
+
+    div.welcome {
+        left: 80px;
+        top: 200px;
+        text-align: left;
+    }
+
+    div.welcome p {
+        font-size: 80px;
+
+    }
+
+    div.welcome h1 {
+        margin-top: 10px;
+        font-size: 40px;
+        font-weight: bold;
+
+    }
+
+    div.welcome h2 {
+        line-height: 0.8;
+        font-size: 40px;
+        font-weight: normal;
+    }
+
+    div button {
+        line-height: 45px;
+
+        font-size: 32px;
+
+    }
+}
+
+@media(orientation:landscape) and (min-width:1400px) {
+    header img {
+        height: 70%;
+    }
+
+    div.welcome {
+        left: 120px;
+        top: 200px;
+        text-align: left;
+    }
+
+    div.welcome p {
+        font-size: 80px;
+
+    }
+
+    div.welcome h1 {
+        margin-top: 10px;
+        font-size: 60px;
+        font-weight: bold;
+
+    }
+
+    div.welcome h2 {
+        line-height: 0.8;
+        font-size: 60px;
+        font-weight: normal;
+    }
+
+    div button {
+        line-height: 90px;
+
+        font-size: 36px;
+
+    }
+}
+
+/* section {
+    min-height: 30vh;
+} */
+
+
+/* sekcja 1 cechy */
+
+section.features {
+    position: relative;
+    text-align: center;
+    padding: 2%;
+    max-width: 1600px;
+    margin: 0 auto;
+
+
+}
+
+.features h1 {
+    font-weight: 800;
+    font-size: 26px;
+    font-family: 'saira condensed', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin: 0% 10px;
+
+}
+
+.features h2 {
+
+    margin: 0% 10px;
+    font-size: 20px;
+    font-family: 'saira condensed', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+
+}
+
+.features p {
+    margin: 10px 10px;
+    line-height: 1.3;
+    font-family: 'saira condensed', Arial, Helvetica, sans-serif;
+    text-align: justify
+}
+
+.feature img,
+.feature2 img {
+
+    width: 100%;
+    margin: 5px 0;
+    max-width: 375px;
+}
+
+div.feature2 {
+    display: none;
+}
+
+@media(min-width:768px) {
+    .features h1 {
+        font-size: 34px;
+    }
+
+    .features h2 {
+        font-size: 28px;
+    }
+
+    .features p {
+        font-size: 18px;
+    }
+
+}
+
+@media(min-width:1024px) {
+    div.feature2 {
+        display: block;
+    }
+
+    .feature,
+    .feature2 {
+        float: left;
+        width: 33%;
+        padding: 3% 2%;
+        /* margin: 0 1.66%; */
+
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .feature h2,
+    .feature2 h2 {
+        font-size: 22px;
+    }
+
+    .feature p,
+    .feature2 p {
+        font-size: 22px;
+        line-height: 110%;
+    }
+}
+
+@media(min-width:1600px) {
+
+    .features h1 {
+        font-size: 60px;
+    }
+
+    .feature h2,
+    .feature2 h2 {
+        font-size: 30px;
+    }
+
+    .feature p,
+    .feature2 p {
+        font-size: 22px;
+        line-height: 110%;
+    }
+}
+
+/* portfolio */
+
+section.portfolio {
+    background-color: #1e1e1e;
+    margin: 0 auto;
+
+}
+
+section.portfolio h1 {
+
+    font-family: 'Saira condensed', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    padding: 10px 10px;
+    text-transform: uppercase;
+
+}
+
+.project1 {
+    background-color: #ff4f2c;
+    margin-bottom: 20px;
+
+}
+
+.project1 img {
+    width: 100%;
+    max-width: 780px;
+
+
+}
+
+.project1 h2 {
+    display: block;
+    width: 90%;
+    font-family: 'Saira condensed', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 20px 0 10px 20px
+}
+
+.project1 p {
+    font-family: 'Saira condensed', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color: white;
+    padding: 20px 0 20px 20px;
+}
+
+.project2 {
+    background-color: #0170ba;
+    margin-bottom: 20px;
+
+}
+
+/* .project2:last-child {
+    margin-bottom: 0px;
+} */
+
+.project2 img {
+    width: 100%;
+    max-width: 780px;
+
+}
+
+.project2 h2 {
+    display: block;
+    width: 90%;
+    font-family: 'Saira condensed', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 20px 0 10px 20px
+}
+
+.project2 p {
+    font-family: 'Saira condensed', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color: white;
+    padding: 20px 5px 20px 20px;
+}
+
+@media(min-width:360px) {
+    section.portfolio h1 {
+
+        font-size: 32px;
+        padding: 25px 10px;
+    }
+
+    .project2 h2,
+    .project1 h2 {
+        font-size: 26px;
+        padding: 15px 0px 10px 20px
+    }
+
+    .project2 p,
+    .project1 p {
+        font-size: 14px;
+        padding: 20px 10px 20px 20px;
+
+    }
+}
+
+@media(min-width:768px) {
+    section.portfolio h1 {
+
+        font-size: 34px;
+        padding: 25px 10px;
+    }
+
+    .project2 h2,
+    .project1 h2 {
+        font-size: 28px;
+        padding: 15px 0px 10px 20px
+    }
+
+    .project2 p,
+    .project1 p {
+        font-size: 18px;
+        padding: 20px 10px 20px 20px;
+
+    }
+}
+
+@media(min-width:1024px) {
+    .project1 {
+        max-width: 90%;
+        margin: 0 auto 20px;
+
+    }
+
+    div.about {
+        float: left;
+        width: 50%;
+        margin-top: 10px;
+
+    }
+
+
+    .project1 img {
+        float: left;
+
+        width: 50%;
+        /* height: 40vh; */
+
+    }
+
+    .project1 h2 {
+        /* float: left; */
+        font-size: 40px;
+        padding: 15px 20px 10px 20px
+    }
+
+
+    .project1 p {
+        /* float: left; */
+        font-size: 18px;
+        padding: 20px 20px 20px 20px;
+
+    }
+
+    .project2 {
+        max-width: 90%;
+        margin: 0 auto 20px;
+        /* height: 40vh; */
+
+    }
+
+
+    .project2 img {
+        float: right;
+
+        width: 50%;
+        /* height: 40vh; */
+
+    }
+
+    .project2 h2 {
+        /* float: left; */
+        font-size: 40px;
+        padding: 15px 20px 10px 20px
+    }
+
+
+    .project2 p {
+        /* float: left; */
+        font-size: 18px;
+        padding: 20px 20px 20px 20px;
+
+    }
+
+
+}
+
+/* motto */
+
+.motto {
+    background-image: url(/wizytówka2/www/images/motto.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    text-align: center;
+    font-family: 'saira condensed', sans-serif;
+
+
+}
+
+.color {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(00, 53, 114, 0.5);
+
+}
+
+.motto div h2 {
+    display: block;
+    font-size: 22px;
+    color: white;
+    padding: 20px 0px;
+
+}
+
+.motto h3 {
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+    padding: 30px 10px;
+}
+
+.motto p {
+    font-weight: normal;
+    font-size: 11px;
+    color: white;
+}
+
+@media(min-width:768px) {
+    .motto div h2 {
+        display: block;
+        font-size: 48px;
+        color: white;
+        padding: 20px 0px;
+
+    }
+
+    .motto h3 {
+        font-weight: normal;
+        font-size: 48px;
+        color: white;
+        padding: 30px 10%;
+    }
+
+    .motto p {
+        font-weight: normal;
+        font-size: 24px;
+        color: white;
+    }
+
+}
+
+/* wolny czas */
+
+.hobby {
+    text-align: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.hobby .item {
+    height: 25vh;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.hobby h1 {
+    font-family: 'Saira condensed', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 20px 5px 10px 5px;
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url(../images/hobby1.jpg);
+
+
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url(../images/hobby2.jpg);
+
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url(../images/hobby3.jpg);
+
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url(../images/hobby4.jpg);
+
+}
+
+.hobby .item p {
+    font-family: 'Saira condensed', sans-serif;
+    line-height: 25vh;
+    text-shadow: 0px 0px 4px gray;
+    background-color: rgba(0, 0, 0, .3);
+
+}
+
+@media(min-width: 533px) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 40vh;
+
+    }
+
+    .hobby .item p {
+        line-height: 40vh;
+    }
+}
+
+@media(min-width: 768px) {
+    .hobby h1 {
+        font-size: 40px;
+    }
+
+    .hobby .item p {
+        font-size: 30px;
+    }
+}
+
+@media(min-width: 1024px) {
+
+    .hobby .item p {
+        background-color: transparent;
+        opacity: 0;
+        transition: 1s;
+
+    }
+
+    .hobby .item {
+        background-size: 100%;
+        transition: 1s;
+    }
+
+    .hobby .item:hover p {
+        opacity: 1;
+    }
+
+    .hobby .item:hover {
+        background-size: 130%;
+    }
+
+
+}
+
+/* sekcja kontakt */
+
+section.contact {
+    background-color: black;
+    color: white;
+    font-family: 'saira condensed', Arial, Helvetica, sans-serif;
+}
+
+section.contact h1 {
+    padding: 20px 5px 10px 5px;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+div.wrap form input,
+div.wrap form textarea,
+div.wrap form button {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+    padding: 5px;
+
+}
+
+div.wrap form {
+    margin-bottom: 20px;
+}
+
+div.wrap form input {
+    height: 36px;
+    font-size: 12px;
+}
+
+div.wrap form textarea {
+    height: 35vh;
+}
+
+div.wrap form button {
+    margin-top: 20px;
+    line-height: 40px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Saira Condensed', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding: 0 10px;
+    font-size: 14px;
+}
+.socials .social{
+    padding-bottom: 10px;
+    margin-left: 15vw;
+}
+
+div.wrap div.socials img {
+    float: left;
+    height: 36px;
+
+}
+
+div.wrap div.socials span {
+    height: 100%;
+    line-height: 36px;
+    padding: 0 10px 10px 10px
+
+
+}
+@media(min-width:533px){
+    div.wrap form {
+        width: 50%;
+        float: left;
+    }
+
+    .socials{
+        float: left;
+        width: 50%;
+    }
+    .socials .social{
+        padding-bottom: 10px;
+        margin-left: 3vw;
+    }
+
+}
+@media(min-width:1024px){
+    .socials .social{
+        margin-top: 20px;
+    }
+    
+    div.wrap div.socials img {
+        
+        height: 64px;
+    
+    }
+    div.wrap div.socials span {
+        
+        line-height: 64px;
+        padding: 20px 10px 20px 10px;
+        font-size: 24px;
+        
+    
+    
+    }
+
+}
+.footer{
+    background-color: #29a9df;
+    text-align: center;
+    font-family: 'saira condensed',sans-serif;
+    
+    
+
+}
+
+.footer p{
+    line-height: 5vw;
+    
+
+} 
