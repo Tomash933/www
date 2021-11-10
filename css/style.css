@@ -624,7 +624,7 @@ section.portfolio h1 {
 /* motto */
 
 .motto {
-    background-image: url(/wizytówka2/www/images/motto.jpg);
+    background-image: url(../images/motto.jpg);
     background-size: cover;
     background-position: center;
     height: 80vh;
