@@ -645,7 +645,7 @@ section.portfolio h1 {
     background-image: url(../images/motto.jpg);
     background-size: cover;
     background-position: center;
-    height: 50vh;
+    height: 60vh;
     text-align: center;
     font-family: 'saira condensed', sans-serif;
 
@@ -872,8 +872,12 @@ div.wrap div.socials img {
 div.wrap div.socials span {
     height: 100%;
     line-height: 36px;
-    padding: 0 10px 10px 10px
+    padding: 0 10px 10px 10px;
 
+}
+div.wrap div.socials span a {
+    color: white;
+    text-decoration: none;
 
 }
 @media(min-width:533px){
