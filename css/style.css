@@ -65,6 +65,7 @@ div.welcome h2 {
 }
 
 div.welcome button {
+    position: relative;
     margin-top: 30px;
     line-height: 32px;
     background-color: transparent;
@@ -72,12 +73,29 @@ div.welcome button {
     color: white;
     font-family: 'Saira Condensed', Arial, Helvetica, sans-serif;
     font-weight: 100;
-    padding: 0 10px;
+    padding: 5px 10px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+div button::before{
+    content: "";
+    position: absolute;
+    left: -100%;
+    transform:translateY(-50%);
+    top: 50%;
+    width: 100%;
+    height: 10%;
+    background-color:rgba(0, 0, 0, .5);
+    transition: left 0.2s linear,height 0.5s 0.2s linear;
+}
+div button:hover::before{
+    left: 0;
+    height: 100%;
 }
 
-div button:hover {
+/* div button:hover {
     background-color: rgba(0, 0, 0, .5);
-}
+} */
 
 @media(orientation:portrait) and (min-width:280px) {
     header img {
@@ -270,7 +288,7 @@ div button:hover {
 
 @media(orientation:landscape) and (min-width:1400px) {
     header img {
-        height: 70%;
+        height: 80%;
     }
 
     div.welcome {
@@ -627,7 +645,7 @@ section.portfolio h1 {
     background-image: url(../images/motto.jpg);
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 50vh;
     text-align: center;
     font-family: 'saira condensed', sans-serif;
 
@@ -654,12 +672,14 @@ section.portfolio h1 {
     font-size: 18px;
     color: white;
     padding: 30px 10px;
+    /* margin-top: 10%; */
 }
 
 .motto p {
     font-weight: normal;
     font-size: 11px;
     color: white;
+    /* margin-top: 10%; */
 }
 
 @media(min-width:768px) {
@@ -675,13 +695,14 @@ section.portfolio h1 {
         font-weight: normal;
         font-size: 48px;
         color: white;
-        padding: 30px 10%;
+        padding: 25px 10%;
     }
 
     .motto p {
         font-weight: normal;
-        font-size: 24px;
+        font-size: 20px;
         color: white;
+        margin: 5px 0px;
     }
 
 }
@@ -717,17 +738,17 @@ section.portfolio h1 {
 }
 
 .hobby .item:nth-of-type(2) {
-    background-image: url(../images/hobby2.jpg);
+    background-image: url(../images/drone-4144154_960_720.jpg);
 
 }
 
 .hobby .item:nth-of-type(3) {
-    background-image: url(../images/hobby3.jpg);
+    background-image: url(../images//camera-ga843741bd_1920.jpg);
 
 }
 
 .hobby .item:nth-of-type(4) {
-    background-image: url(../images/hobby4.jpg);
+    background-image: url(../images/fitness-g0e51245ab_1920.jpg);
 
 }
 
